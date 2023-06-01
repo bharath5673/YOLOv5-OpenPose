@@ -10,8 +10,8 @@ device = 0  #for gpu
 yolov5 = yolov5.YOLOv5(model_path,device,load_on_init=True)
 
 # Load the video
-# video = cv2.VideoCapture(0)
-video = cv2.VideoCapture("test4.mp4")
+ video = cv2.VideoCapture(0)
+# video = cv2.VideoCapture("test4.mp4")
 
 
 # Get the video's width, height, and frames per second (fps)
@@ -59,10 +59,6 @@ while True:
         padding = 25
         person = frame[int(ymin):int(ymax), int(xmin):int(xmax)]
 
-        # # if xmax > 0 or xmin > 0 or ymin > 0 or ymax > 0 :
-        # person=frame[int(ymin)-padding:int(ymax)+padding,
-        # int(xmin)-padding:int(xmax)+padding]
-
         try:  ### mediapipe
             process_image(person)
         except:
@@ -70,7 +66,6 @@ while True:
 
       else:
         pass
-
 
 
 
