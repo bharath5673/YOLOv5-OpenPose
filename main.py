@@ -24,7 +24,6 @@ video_writer = cv2.VideoWriter(output_file, cv2.VideoWriter_fourcc(*'mp4v'), fps
 
 
 
-
 # Process each frame of the video
 while True:
   # Read the next frame
