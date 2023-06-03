@@ -3,6 +3,7 @@ import numpy as np
 import yolov5
 from HolisticDemo import process_image
 
+
 # Load the YOLOv5 model
 model_path = ' yolov5s.pt'
 # device = "cpu"  # for cpu
